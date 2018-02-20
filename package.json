@@ -1,0 +1,29 @@
+{
+  "name": "acrostia",
+  "version": "1.0.0",
+  "description": "Projet d'integration web",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run scss-compile",
+    "compile": "node-sass -rw assets/stylesheets/scss -o assets/stylesheets/css",
+    "watch": "npm run scss-compile"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "psd",
+    "photoshop",
+    "integration",
+    "js",
+    "javascript",
+    "scss",
+    "json",
+    "responsive"
+  ],
+  "author": "Tristan Ramirez",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.7.2",
+    "scss-compile": "^0.1.7"
+  }
+}
