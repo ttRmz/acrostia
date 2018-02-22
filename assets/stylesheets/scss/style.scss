@@ -47,12 +47,12 @@ nav{
 .container{
   display: flex;
   width: 90%;
-  h1{
-  font-weight: 300;
-  }
   h4{
     text-transform: uppercase;
     font-weight: 100;
+  }
+  h1, h3, h5{
+    font-weight: 300;
   }
 }
 section{
@@ -119,9 +119,9 @@ section{
       text-align: center;
       margin-top: 85px;
       width: 100%;
-      justify-content: center;
+      justify-content: space-between;
       .content{
-        width: 21%;
+        width: 25%;
         margin: 0 15px;
         background-color: rgba(255, 255, 255, 0.1);
         figure{
@@ -162,9 +162,9 @@ section{
       display: flex;
       text-align: center;
       width: 100%;
-      justify-content: center;
+      justify-content: space-between;
       .content{
-        width: 21%;
+        width: 25%;
         margin: 0 15px;
         background-color: rgba(255, 255, 255, 0.1);
         -webkit-transition: background 0.3s ease-in-out;
@@ -244,20 +244,15 @@ section{
     justify-content: center;
     align-items: center;
     margin: auto;
-    h4{
-      text-transform: uppercase;
-      font-weight: 300;
-    }
     .work-content{
       flex-direction: row;
       flex-wrap: wrap;
       display: flex;
       text-align: center;
       width: 100%;
-      justify-content: center;
+      justify-content: space-between;
       .content{
         margin: 10px 0;
-        max-width: 280px;
         width: 25%;
         figure:hover {
           .overlay{
@@ -318,6 +313,94 @@ section{
             text-transform: uppercase;
             font-size: 0.8em;
             margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.contact-section{
+  background-image: url("../../images/contact-bg.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  .container{
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    .contact-content{
+      flex-direction: row;
+      flex-wrap: wrap;
+      display: flex;
+      text-align: left;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      .content{
+        form{
+          flex-wrap: wrap;
+          flex-direction: row;
+          display: flex;
+          justify-content: space-between;
+          input{
+            padding: 1%;
+            margin-bottom: 10px;
+          }
+          $placeholdercolor : #82c8bd;
+          #name,#email,#msg{
+            background-color: rgba(0,0,0, 0.1);
+          }
+          #name,#email,#msg, #submit{
+            padding: 10px;
+            color: #ffffff;
+            border: none;
+            font-family: 'Lato', sans-serif;
+          }
+          #name,#email{
+            width: 44%;
+          }
+          #submit{
+            background-color: #df5c64;
+            margin: 10px auto 0 auto;
+            width: 50%;
+            color: #ffffff;
+            font-weight: bold;
+          }
+          #msg{
+            overflow: hidden;
+            width: 100%;
+            resize: none;
+          }
+          ::-webkit-input-placeholder {
+            color: $placeholdercolor;
+          }
+          :-moz-placeholder {
+            color: $placeholdercolor;
+            opacity: 1;
+          }
+          ::-moz-placeholder {
+            color: $placeholdercolor;
+            opacity: 1;
+          }
+          :-ms-input-placeholder {
+            color: $placeholdercolor;
+          }
+          :-ms-input-placeholder {
+            color: $placeholdercolor;
+          }
+
+          ::placeholder {
+            color: $placeholdercolor;
+          }
+        }
+        .infos{
+          margin-top: 30px;
+          font-weight: 300;
+          span{
+            font-weight: 600;
+            float: right;
           }
         }
       }

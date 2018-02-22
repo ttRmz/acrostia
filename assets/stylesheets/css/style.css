@@ -46,12 +46,12 @@ nav .nav-links li a {
   display: flex;
   width: 90%; }
 
-.container h1 {
-  font-weight: 300; }
-
 .container h4 {
   text-transform: uppercase;
   font-weight: 100; }
+
+.container h1, .container h3, .container h5 {
+  font-weight: 300; }
 
 section {
   height: 100vh;
@@ -119,10 +119,10 @@ section {
   text-align: center;
   margin-top: 85px;
   width: 100%;
-  justify-content: center; }
+  justify-content: space-between; }
 
 .services-section .container .services-content .content {
-  width: 21%;
+  width: 25%;
   margin: 0 15px;
   background-color: rgba(255, 255, 255, 0.1); }
 
@@ -162,10 +162,10 @@ section {
   display: flex;
   text-align: center;
   width: 100%;
-  justify-content: center; }
+  justify-content: space-between; }
 
 .about-section .container .services-content .content {
-  width: 21%;
+  width: 25%;
   margin: 0 15px;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: background 0.3s ease-in-out;
@@ -243,21 +243,16 @@ section {
   align-items: center;
   margin: auto; }
 
-.work-section .container h4 {
-  text-transform: uppercase;
-  font-weight: 300; }
-
 .work-section .container .work-content {
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
   text-align: center;
   width: 100%;
-  justify-content: center; }
+  justify-content: space-between; }
 
 .work-section .container .work-content .content {
   margin: 10px 0;
-  max-width: 280px;
   width: 25%; }
 
 .work-section .container .work-content .content figure:hover .overlay {
@@ -318,5 +313,89 @@ section {
   text-transform: uppercase;
   font-size: 0.8em;
   margin: 0; }
+
+.contact-section {
+  background-image: url("../../images/contact-bg.png");
+  background-position: center;
+  background-size: cover;
+  display: flex; }
+
+.contact-section .container {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto; }
+
+.contact-section .container .contact-content {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  text-align: left;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between; }
+
+.contact-section .container .contact-content .content form {
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between; }
+
+.contact-section .container .contact-content .content form input {
+  padding: 1%;
+  margin-bottom: 10px; }
+
+.contact-section .container .contact-content .content form #name, .contact-section .container .contact-content .content form #email, .contact-section .container .contact-content .content form #msg {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.contact-section .container .contact-content .content form #name, .contact-section .container .contact-content .content form #email, .contact-section .container .contact-content .content form #msg, .contact-section .container .contact-content .content form #submit {
+  padding: 10px;
+  color: #ffffff;
+  border: none;
+  font-family: 'Lato', sans-serif; }
+
+.contact-section .container .contact-content .content form #name, .contact-section .container .contact-content .content form #email {
+  width: 44%; }
+
+.contact-section .container .contact-content .content form #submit {
+  background-color: #df5c64;
+  margin: 10px auto 0 auto;
+  width: 50%;
+  color: #ffffff;
+  font-weight: bold; }
+
+.contact-section .container .contact-content .content form #msg {
+  overflow: hidden;
+  width: 100%;
+  resize: none; }
+
+.contact-section .container .contact-content .content form ::-webkit-input-placeholder {
+  color: #82c8bd; }
+
+.contact-section .container .contact-content .content form :-moz-placeholder {
+  color: #82c8bd;
+  opacity: 1; }
+
+.contact-section .container .contact-content .content form ::-moz-placeholder {
+  color: #82c8bd;
+  opacity: 1; }
+
+.contact-section .container .contact-content .content form :-ms-input-placeholder {
+  color: #82c8bd; }
+
+.contact-section .container .contact-content .content form :-ms-input-placeholder {
+  color: #82c8bd; }
+
+.contact-section .container .contact-content .content form ::placeholder {
+  color: #82c8bd; }
+
+.contact-section .container .contact-content .content .infos {
+  margin-top: 30px;
+  font-weight: 300; }
+
+.contact-section .container .contact-content .content .infos span {
+  font-weight: 600;
+  float: right; }
 
 /*# sourceMappingURL=style.css.map */
