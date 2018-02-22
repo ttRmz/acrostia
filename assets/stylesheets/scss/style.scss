@@ -213,7 +213,7 @@ section{
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    background-color: #a1859e;
+    background-color: rgba(255,255,255,0.1);
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     -ms-transition: background 0.3s ease-in-out;
@@ -404,6 +404,20 @@ section{
           }
         }
       }
+    }
+  }
+}
+footer{
+  background-color: #68a097;
+  .social{
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    a{
+      width: 50px;
+      height: 50px;
     }
   }
 }
