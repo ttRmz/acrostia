@@ -48,7 +48,8 @@ nav{
   width: 90%
 }
 section{
-  height: 720px;
+  height: 100vh;
+  min-height: 720px;
 }
 .title-section{
   font-size: 3em;
@@ -64,6 +65,7 @@ section{
   background-position: center;
   background-size: cover;
   height: 100vh;
+  min-height: 100vh;
   .good-idea{
     background-color: rgba(255, 255, 255, 0.5);
     display: flex;
@@ -91,6 +93,8 @@ section{
  }
 .services-section{
   background-image: url("../../images/services-bg.png");
+  background-position: center;
+  background-size: cover;
   display: flex;
   .container{
     text-align: center;
@@ -120,6 +124,7 @@ section{
           margin-top: 50px;
           img{
             width: 100%;
+            max-width: 125px;
           }
         }
         h2{
@@ -136,6 +141,8 @@ section{
 }
 .about-section{
   background-image: url("../../images/about-bg.png");
+  background-position: center;
+  background-size: cover;
   display: flex;
   .container{
     text-align: center;
@@ -143,21 +150,29 @@ section{
     justify-content: center;
     align-items: center;
     margin: auto;
+    figure{
+      margin: 30px 0;
+    }
     .services-content{
       flex-direction: row;
       display: flex;
       text-align: center;
-      margin-top: 85px;
       width: 100%;
       justify-content: center;
       .content{
         width: 21%;
         margin: 0 15px;
         background-color: rgba(255, 255, 255, 0.1);
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        -ms-transition: background 0.3s ease-in-out;
+        -o-transition: background 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out;
         figure{
           margin-top: 50px;
           img{
             width: 100%;
+            max-width: 125px;
           }
         }
         h2{
@@ -170,7 +185,47 @@ section{
           font-size: 12px;
           color: #a1ca6c;
         }
+        .mastered{
+          color: #ff8973;
+        }
+      }
+      .content:hover{
+        background-color: rgba(0, 0, 0, 0.1);
+
       }
     }
+  }
+}
+.social{
+  margin: 30px auto;
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  a{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #a1859e;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+  }
+  .fb:hover{
+    background-color: #4f689e;
+  }
+  .twit:hover{
+    background-color: #74c7d5;
+  }
+  .g:hover{
+    background-color: #df5c64;
+  }
+  .lin:hover{
+    background-color: #3e61af;
   }
 }
